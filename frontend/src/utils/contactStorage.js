@@ -1,4 +1,4 @@
-import { config } from '../config/env';
+import { config } from '@/config/env';
 
 const API_URL = `${config.apiUrl}/api/contacts`;
 
@@ -113,8 +113,8 @@ export const validateContact = (data) => {
 
   if (!data.phone?.trim()) {
     errors.phone = 'Phone number is required';
-  } else if (!/^\d{7,}$/.test(data.phone.replace(/\D/g, ''))) {
-    errors.phone = 'Phone must have at least 7 digits';
+  } else if (!/^\d{10}$/.test(data.phone.replace(/\D/g, ''))) {
+    errors.phone = 'Phone must be exactly 10 digits';
   }
 
   return errors;

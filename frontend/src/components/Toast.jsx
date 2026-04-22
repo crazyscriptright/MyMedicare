@@ -1,4 +1,4 @@
-import { CheckIcon, CloseIcon } from '../icons';
+import { CheckIcon, CloseIcon } from '@/icons';
 
 const TYPE_CLASS = {
   success: 'toast-success',

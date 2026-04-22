@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
-import { ToastProvider } from './context/ToastContext';
-import { ToastContainer } from './components/ToastContainer';
-import Navbar from './components/Navbar';
-import Sheet from './components/Sheet';
-import ContactList from './pages/ContactList';
-import ContactForm from './pages/ContactForm';
+import { ToastProvider } from '@/context/ToastContext';
+import { ToastContainer } from '@/components/ToastContainer';
+import Navbar from '@/components/Navbar';
+import Sheet from '@/components/Sheet';
+import ContactList from '@/pages/ContactList';
+import ContactForm from '@/pages/ContactForm';
 import './index.css';
 
 function AppContent() {

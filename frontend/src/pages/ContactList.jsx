@@ -1,10 +1,10 @@
 import { useState, useEffect, useContext, useCallback } from 'react';
-import Button from '../components/Button';
-import PageHeader from '../components/PageHeader';
-import SearchInput from '../components/SearchInput';
-import { EditIcon, DeleteIcon, PlusIcon, UserIcon, ChevronLeftIcon, ChevronRightIcon, CloseIcon } from '../icons';
-import { getContacts, deleteContact } from '../utils/contactStorage';
-import { ToastContext } from '../context/ToastContext';
+import Button from '@/components/Button';
+import PageHeader from '@/components/PageHeader';
+import SearchInput from '@/components/SearchInput';
+import { EditIcon, DeleteIcon, PlusIcon, UserIcon, ChevronLeftIcon, ChevronRightIcon, CloseIcon } from '@/icons';
+import { getContacts, deleteContact } from '@/utils/contactStorage';
+import { ToastContext } from '@/context/ToastContext';
 
 const PAGE_SIZE = 10;
 

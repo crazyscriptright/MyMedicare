@@ -52,9 +52,9 @@ def validate_email(email):
 
 
 def validate_phone(phone):
-    """Return True if phone contains between 7 and 15 digits."""
+    """Return True if phone contains exactly 10 digits."""
     digits = re.sub(r'\D', '', phone)
-    return 7 <= len(digits) <= 15
+    return len(digits) == 10
 
 
 def validate_contact_data(data):
@@ -69,7 +69,7 @@ def validate_contact_data(data):
         errors.append('Invalid email format.')
 
     if data.get('phone') and not validate_phone(data['phone']):
-        errors.append('Phone must contain 7–15 digits.')
+        errors.append('Phone must be exactly 10 digits.')
 
     return errors
 

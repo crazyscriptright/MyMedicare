@@ -1,4 +1,4 @@
-import { SearchIcon } from '../icons';
+import { SearchIcon } from '@/icons';
 
 /**
  * Compact search input with a leading icon.

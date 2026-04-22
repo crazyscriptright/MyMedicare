@@ -1,4 +1,4 @@
-import { CloseIcon } from '../icons';
+import { CloseIcon } from '@/icons';
 
 /**
  * Slide-in panel from the right edge of the screen.

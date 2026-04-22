@@ -1,4 +1,4 @@
-import { CloseIcon } from '../icons';
+import { CloseIcon } from '@/icons';
 
 export const Modal = ({ isOpen, onClose, title, children, className = '' }) => {
   if (!isOpen) return null;

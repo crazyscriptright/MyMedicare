@@ -1,4 +1,4 @@
-import { SunIcon, MoonIcon } from '../icons';
+import { SunIcon, MoonIcon } from '@/icons';
 
 export const ThemeToggle = ({ isDark, onToggle }) => {
   return (

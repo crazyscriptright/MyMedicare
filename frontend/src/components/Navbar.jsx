@@ -1,4 +1,4 @@
-import { SunIcon, MoonIcon } from '../icons';
+import { SunIcon, MoonIcon } from '@/icons';
 
 /** SVG health-cross mark used as the brand logo. */
 function MedLogo() {

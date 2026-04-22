@@ -1,9 +1,9 @@
 import { useState, useEffect, useContext } from 'react';
-import Button from '../components/Button';
-import Input from '../components/Input';
-import { CheckIcon, UserIcon, MailIcon, PhoneIcon, MapIcon } from '../icons';
-import { addContact, updateContact, validateContact } from '../utils/contactStorage';
-import { ToastContext } from '../context/ToastContext';
+import Button from '@/components/Button';
+import Input from '@/components/Input';
+import { CheckIcon, UserIcon, MailIcon, PhoneIcon, MapIcon } from '@/icons';
+import { addContact, updateContact, validateContact } from '@/utils/contactStorage';
+import { ToastContext } from '@/context/ToastContext';
 
 /**
  * Form for creating or editing a patient record.
@@ -118,7 +118,7 @@ export default function ContactForm({ contact, onSave, onCancel }) {
           label="Phone"
           name="phone"
           type="tel"
-          placeholder="+91 98765 43210"
+          placeholder="10-digit number (e.g. 9876543210)"
           value={form.phone}
           onChange={handleChange}
           error={errors.phone}

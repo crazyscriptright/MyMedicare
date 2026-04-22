@@ -33,8 +33,16 @@ if __name__ == '__main__':
     from routes.contacts import init_db
     init_db()
 
-    port = int(os.getenv('FLASK_PORT', 5000))
-    debug = os.getenv('FLASK_ENV', 'development') == 'development'
+    port_env  = os.getenv('FLASK_PORT')
+    env_env   = os.getenv('FLASK_ENV')
+
+    if not port_env:
+        print('[config] FLASK_PORT is not set in .env — falling back to 5000')
+    if not env_env:
+        print('[config] FLASK_ENV is not set in .env — falling back to development')
+
+    port  = int(port_env or 5000)
+    debug = (env_env or 'development') == 'development'
 
     print(f'\n  ✅  Contact Manager API running at  http://localhost:{port}\n')
     app.run(debug=debug, port=port)
